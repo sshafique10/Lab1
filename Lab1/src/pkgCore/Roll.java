@@ -7,12 +7,17 @@ public class Roll {
 	private int Score;
 
 	public Roll() {
-		// TODO: Create an instance of d1 and d2...
-		// TODO: Determine 'Score'
+		
+		d1 = new Die();
+		d2 = new Die();
+		
+		getScore(d1.getDieValue() + d2.getDieValue());
 	}
 
+	private void getScore(int Score) {
+		this.Score= Score;
+	}
 	public int getScore() {
 		return Score;
 	}
-
 }
